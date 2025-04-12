@@ -7,8 +7,12 @@
 
 header {
     padding: 10px 40px;
-    height: 80px;
+    /* height: 80px; */
+    width: 100%;
     background-color: #141A29;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,11 +21,12 @@ header {
         background-color: #141A29;
         color: #F4F2F4;
         font-size: 30px;
-        font-weight: 700;
+        font-weight: 500;
     }
     span {
         background-color: #141A29;
         color: #6C94AD;
+        font-weight: 500;
     }
     nav {
         ul {
@@ -50,6 +55,7 @@ header {
     text-align: center;
     height: 850px;
     background-image: url(../img/hero_background.jpg);
+    width: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -121,6 +127,7 @@ header {
 .image {
     border-radius: 20px;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .content {
@@ -221,3 +228,87 @@ header {
     }
 }
 
+
+.link {
+    background-color:#0F1523;
+    padding-bottom: 100px;
+
+    .container {
+        background-color: #0F1523;
+    }
+    .heading-group {
+        background-color: #0F1523;
+        text-align: center;
+        margin: 0 0 60px;
+        h2 {
+            color: #C18F00;
+            padding-top: 100px;
+            background-color: #0F1523;
+            font-size: 60px;
+            font-weight: 700;
+        }
+        ul li {
+            background-color: #0F1523;
+        }
+        a {
+            background-color: #0F1523;
+        }
+    }
+}   
+
+.box {
+    background-color: #0F1523;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.card {
+
+    height: 250px;
+    width: 300px;
+    background-color: #141A29;
+    padding: 20px 35px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    color: #6C94AD;
+    font-size: 50px;
+    margin: 50px 0;
+
+}
+
+/* h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 30px;
+} */
+
+.paragraph p {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.card .button {
+    background-color: #6C94AD;
+    padding: 13px 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #C18F00;
+}
