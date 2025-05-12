@@ -13,24 +13,25 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>
-            <a href="index.html" class="logo">
+        <div class="logo">
+            <a href="index.html">
                 Mahki <span>Takanari</span>
             </a>
-        </h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#aboutme">About me</a></li>
-                <li><a href="#link">Link</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#aboutme" class="navigate">About me</a></li>
+                <li><a href="#link" class="navigate">Link</a></li>
+                <li><a href="#contact" class="navigate">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- Hero -->
      <section class="hero">
-        <h2>
+        <h1>
             SOMETHING NEW.
-        </h2>
+        </h1>
         <p>
             Welcome to my Home Page.
         </p>
@@ -38,25 +39,26 @@
             <img src="/img/down.png">
         </a>
      </section>
-     <!-- Main -->
+
      <main>
-        <!-- About me -->
+        <!-- About me section -->
         <section class="main-section" id="aboutme">
-            <div class="container">
-                <div class="heading-group">
-                    <h2>About me</h2>
-                </div>
-                <!-- portfolio section -->
-                <div class="portfolio">
+            <div class="heading-group">
+                <h2>About me</h2>
+            </div>
+
+            <!-- portfolio info -->
+             <section class="portfolio">
+                <div class="container">
                     <div class="layout">
                         <div class="image">
                             <img src="/img/portfolioinfo.jpg">
                         </div>
-                        <div class="portfolioInfo">
+                        <div class="portfolioinfo">
                             <h4>たかなり まあき</h4>
                             <h3>高成 真輝 <span>- Maaki Takanari</span></h3>
-                            <p>1999年12月生まれ。北海道旭川市出身。</p>
-                            <p>東北大学大学院工学研究科ロボティクス専攻 博士課程後期2年 
+                            <p>1999年12月11日生まれ。北海道旭川市出身。</p>
+                            <p>東北大学大学院工学研究科ロボティクス専攻 博士課程後期2年
                                 <br>田中(真)・奥山研究室 所属
                             </p>
                             <p>研究テーマ</p>
@@ -83,130 +85,132 @@
                                 2022.4 - 2024.3<br>
                                 <span>公益財団法人山田満育英会 奨学生</span>
                             </h5>
-
-                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- career section -->
-        <section class="career">
-            <div class="container career">
-                <div class="layout">
-                    <div class="content">
-                        <h3>経　　歴</h3>
-                    </div>
-                    <div class="body">
-                        <h5>博士課程｜<span>2024.4 - 現在</span></h5>
-                        <p>東北大学大学院 工学研究科 ロボティクス専攻</p>
-                        <p></p>
-                        <h5>修士課程｜<span>2022.4 - 2024.3</span></h5>
-                        <p>東北大学大学院 工学研究科 ロボティクス専攻<br>
-                        
-                            修論題目：指腹部の皮膚状態と触覚知覚の関係に関する研究
-                        </p>
-                        <h5>学　　士｜<span>2018.4 - 2022.3</span></h5>
-                        <p>室蘭工業大学 工学部 機械航空創造系学科<br>
-                        
-                            卒論題目：層状皮膚モデルと円環状検出領域を用いた皮膚の分光反射率シミュレーション
-                        </p>
-                    </div>
-                </div>            
-            </div>            
-        </section>
+            </section>
 
-        <section class="performance">
-            <div class="container performance">
-                <div class="layout">
-                    <div class="content">
-                        <h3>研究業績</h3>
-                    </div>
-                    <div class="body">
-                        <h5><span>国際学会発表</span></h5>
-                        <ul>
-                            <li>・<span>Maaki Takanari</span>, Takeshi Okuyama, Cyril Pailler-Mattei, Mami Tanaka, “Study on the relationship between the skin properties of the finger pad and vibration perception”, The 20th International Conference on Precision Engineering, Oct. 2024, Miyagi, Japan.</li>
-                        </ul>
-
-                        <h5><span>国内学会発表</span></h5>
-                        <ul>
-                            <li>・<span>高成真輝</span>, 奥山武志, 田中真美, “垂直及び水平振動刺激に対する指先の知覚とヤング率の関係に関する研究”, IIP2025, 2025.3, 山口.</li>
-                            <li>・<span>高成真輝</span>, 島田遥加, 奥山武志, 田中真美, “木材感と表面特性の関係に関する研究”, 日本機械学会2024年度年次大会, 2024.9, 愛媛.</li>
-                            <li>・<span>高成真輝</span>, 奥山武志, 田中真美, ”指腹部の機械的特性と振動知覚に関する研究", 第32回MAGDAコンファレンス, 2023.11, 石川.</li>
-                            <li>・<span>高成真輝</span>, 奥山武志, 田中真美, "水分量が異なる指腹部の機械的特性と粗さ感知覚特性の関係解明に関する研究", IIP2023, 2023.3, 福岡.</li>
-                            <li>・川村隼斗, 八木沼優, 田村光, <span>高成真輝</span>, 湯浅友典, 相津佳永, "皮膚伝搬光子に関する平均浸透深さと検出エネルギーのシミュレーション", 第69回応用物理学会春季学術講演会, 2022.3, オンライン.</li>
-                            <li>・<span>高成真輝</span>, 八木沼優, 川村隼斗, 田村光, 湯浅友典, 相津佳永, "円環状検出領域を想定した皮膚の分光反射率シミュレーション", 第57回応用物理学会北海道支部/第18回日本光学会北海道支部合同学術講演会, 2022.1, オンライン.</li>
-                            <li>・川村隼斗, 八木沼優, 田村光, <span>高成真輝</span>, 湯浅友典, 相津佳永, "皮膚伝搬光子に関する平均浸透深さと検出エネルギーの考察", 第57回応用物理学会北海道支部/第18回日本光学会北海道支部合同学術講演会, 2022.1, オンライン.</li>
-                            <li>・八木沼優, <span>高成真輝</span>, 山田幸生, 湯浅友典, 相津佳永, "可視領域における皮膚の吸収散乱変化にともなう内部伝搬光のシミュレーション", OPJ2021, 2021.10, オンライン.</li>
-                        </ul>
-
-                        <h5><span>受賞歴</span></h5>
-                        <ul>
-                            <li>・<span>高成真輝</span>, 情報・知能・精密機器部門 ベストプレゼンテーション表彰, “木材感と表面特性の関係に関する研究”, 日本機械学会, 2025.3</li>
-                            <li>・<span>高成真輝</span>, 日本機械学会 三浦賞, 日本機械学会, 2024.3</li>
-                            <li>・<span>高成真輝</span>, 奥山武志, 田中真美, 日本AEM学会 MAGDA優秀講演論文賞, 日本AEM学会, 2023.11</li>
-                        </ul>
+            <!-- carrer -->
+             <section class="carrer">
+                <div class="container">
+                    <div class="layout">
+                        <div class="title">
+                            <h3>経　　歴</h3>
+                        </div>
+                        <div class="content">
+                            <h5>博士課程｜<span>2024.4 - 現在</span></h5>
+                            <p>東北大学大学院 工学研究科 ロボティクス専攻</p>
+                            <h5>修士課程｜<span>2022.4 - 2024.3</span></h5>
+                            <p>東北大学大学院 工学研究科 ロボティクス専攻<br>
+                                修論題目：指腹部の皮膚状態と触覚知覚の関係に関する研究
+                            </p>
+                            <h5>学　　士｜<span>2018.4 - 2022.3</span></h5>
+                            <p>室蘭工業大学 工学部 機械航空創造系学科<br>
+                                卒論題目：層状皮膚モデルと円環状検出領域を用いた皮膚の分光反射率シミュレーション
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- performance -->
+             <section class="performance">
+                <div class="container">
+                    <div class="layout">
+                        <div class="title">
+                            <h3>研究業績</h3>
+                        </div>
+                        <div class="content">
+                            <h5>国際学会発表</h5>
+                            <ul>
+                                <li>・<span>Maaki Takanari</span>, Takeshi Okuyama, Cyril Pailler-Mattei, Mami Tanaka, “Study on the relationship between the skin properties of the finger pad and vibration perception”, The 20th International Conference on Precision Engineering, Oct. 2024, Miyagi, Japan.</li>
+                            </ul>
+    
+                            <h5>国内学会発表</h5>
+                            <ul>
+                                <li>・<span>高成真輝</span>, 奥山武志, 田中真美, “垂直及び水平振動刺激に対する指先の知覚とヤング率の関係に関する研究”, IIP2025, 2025.3, 山口.</li>
+                                <li>・<span>高成真輝</span>, 島田遥加, 奥山武志, 田中真美, “木材感と表面特性の関係に関する研究”, 日本機械学会2024年度年次大会, 2024.9, 愛媛.</li>
+                                <li>・<span>高成真輝</span>, 奥山武志, 田中真美, ”指腹部の機械的特性と振動知覚に関する研究", 第32回MAGDAコンファレンス, 2023.11, 石川.</li>
+                                <li>・<span>高成真輝</span>, 奥山武志, 田中真美, "水分量が異なる指腹部の機械的特性と粗さ感知覚特性の関係解明に関する研究", IIP2023, 2023.3, 福岡.</li>
+                                <li>・川村隼斗, 八木沼優, 田村光, <span>高成真輝</span>, 湯浅友典, 相津佳永, "皮膚伝搬光子に関する平均浸透深さと検出エネルギーのシミュレーション", 第69回応用物理学会春季学術講演会, 2022.3, オンライン.</li>
+                                <li>・<span>高成真輝</span>, 八木沼優, 川村隼斗, 田村光, 湯浅友典, 相津佳永, "円環状検出領域を想定した皮膚の分光反射率シミュレーション", 第57回応用物理学会北海道支部/第18回日本光学会北海道支部合同学術講演会, 2022.1, オンライン.</li>
+                                <li>・川村隼斗, 八木沼優, 田村光, <span>高成真輝</span>, 湯浅友典, 相津佳永, "皮膚伝搬光子に関する平均浸透深さと検出エネルギーの考察", 第57回応用物理学会北海道支部/第18回日本光学会北海道支部合同学術講演会, 2022.1, オンライン.</li>
+                                <li>・八木沼優, <span>高成真輝</span>, 山田幸生, 湯浅友典, 相津佳永, "可視領域における皮膚の吸収散乱変化にともなう内部伝搬光のシミュレーション", OPJ2021, 2021.10, オンライン.</li>
+                            </ul>
+    
+                            <h5>受賞歴</h5>
+                            <ul>
+                                <li>・<span>高成真輝</span>, 情報・知能・精密機器部門 ベストプレゼンテーション表彰, “木材感と表面特性の関係に関する研究”, 日本機械学会, 2025.3</li>
+                                <li>・<span>高成真輝</span>, 日本機械学会 三浦賞, 日本機械学会, 2024.3</li>
+                                <li>・<span>高成真輝</span>, 奥山武志, 田中真美, 日本AEM学会 MAGDA優秀講演論文賞, 日本AEM学会, 2023.11</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </section>
         </section>
-        <section class="link" id="link">
+
+        <!-- Link section -->
+        <section class="link-section" id="link">
             <div class="container">
                 <div class="heading-group">
                     <h2>Link</h2>
                 </div>
-                <!-- portfolio section -->
                 <div class="box">
                     <div class="card">
                         <i class="fa-brands fa-github"></i>
-                        <!-- <h5>Git Hub</h5> -->
-                        <div class="paragraph">
-                            <p style="text-align: center;">
-                                <a href="https://github.com/MahkiTakanari" class="button" target="_blank" rel="noopener noreferrer">Git Hub</a>
-                            </p>
+                        <p>
+                            <a href="https://github.com/MahkiTakanari" class="button" target="_blank" rel="noopener noreferrer">Git Hub</a>
+                        </p>
                         </div>
-                    </div>
                     <div class="card">
                         <i class="fa-solid fa-house"></i>
-                        <!-- <h5>研究室HP</h5> -->
-                        <div class="paragraph">
-                            <p style="text-align: center;">
-                                <a href="https://sites.google.com/view/tohoku-mech-mwel" class="button" target="_blank" rel="noopener noreferrer">研究室HP</a>
-                            </p>
+                        <p>
+                            <a href="https://sites.google.com/view/tohoku-mech-mwel" class="button" target="_blank" rel="noopener noreferrer">研究室HP</a>
+                        </p>
                         </div>
-                    </div>
                     <div class="card">
                         <i class="fa-solid fa-handshake"></i>
-                        <!-- <h5>GreDi</h5> -->
-                        <div class="paragraph">
-                            <p style="text-align: center;">
-                                <a href="https://gredi.tohoku.ac.jp/" class="button" target="_blank" rel="noopener noreferrer">GreDi</a>
-                            </p>
+                        <p>
+                            <a href="https://sites.google.com/view/tohoku-mech-mwel" class="button" target="_blank" rel="noopener noreferrer">GreDi</a>
+                        </p>
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <section class="main-section contact" id="contact">
+
+        <!-- Contact section -->
+         <section class="contact-section" id="contact">
             <div class="container">
                 <div class="heading-group">
                     <h2>Contact</h2>
                 </div>
-                <!-- portfolio section -->
-                <div class="sitelink">
-                    <div class="portfolioInfo">
-                        <p>TEL<br>
-                            022-795-5879</p>
-                        <p>住所<br>
-                            宮城県仙台市青葉区荒巻字青葉 6-6-04 <br>
-                            東北大学青葉山キャンパス 工学部管理棟1階114号室
-                        </p>
-                        <p>アクセス <br>
-                        仙台市地下鉄東西線 青葉山駅北口から徒歩7分</p>
-                    </div>
+                <div class="contact">
+                    <h5>TEL</h5>
+                    <p>022-795-5879</p>
+                    <h5>メールアドレス</h5>
+                    <img src="/img/mail.svg" class="mail" alt="メールアドレス">
+                    <h5>住所</h5>
+                    <p>
+                        宮城県仙台市青葉区荒巻字青葉 6-6-04 <br>
+                        東北大学青葉山キャンパス 工学部管理棟1階114号室
+                    </p>
+                    <h5>アクセス</h5>
+                    <p>
+                    仙台市地下鉄東西線 青葉山駅北口から徒歩7分
+                </p>
                 </div>
             </div>
-        </section>
+         </section>
      </main>
+
+     <footer>
+        <div class="container">
+            <p>Thanks for visiting my home page.</p>
+            <p>&copy;2025 MahkiTakanari. All rights reserved.</p>
+        </div>
+     </footer>
+
 </body>
+
 </html>
