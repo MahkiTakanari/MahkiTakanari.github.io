@@ -281,3 +281,50 @@ footer {
     }
 }
 
+
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .portfolioinfo h3 {
+    font-size: 40px;
+  }
+  .portfolioinfo h3 span {
+    font-size: 24px;
+  }
+  .heading-group h2 {
+    font-size: 40px;
+  }
+  .link-section .box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+  }
+  .contact-section .mail {
+    width: 90%;
+  }
+}
