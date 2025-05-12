@@ -25,6 +25,9 @@ header {
         display: block;
         font-size: 30px;
         font-weight: 500;
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
     }
     span {
         color: #6C94AD;
@@ -41,6 +44,14 @@ header {
         &:hover {
             color: #6C94AD;
         }
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -279,52 +290,4 @@ footer {
         padding-bottom: 10px;
         font-weight: 200;
     }
-}
-
-
-
-
-/* レスポンシブ対応 */
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
-  }
-  .hero h1 {
-    font-size: 40px;
-  }
-  .hero p {
-    font-size: 20px;
-  }
-  .layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .portfolioinfo h3 {
-    font-size: 40px;
-  }
-  .portfolioinfo h3 span {
-    font-size: 24px;
-  }
-  .heading-group h2 {
-    font-size: 40px;
-  }
-  .link-section .box {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .card {
-    width: 90%;
-    height: auto;
-  }
-  .contact-section .mail {
-    width: 90%;
-  }
 }
