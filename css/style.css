@@ -7,6 +7,10 @@
         'IBM Plex Sans JP', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     padding: 15px 40px;
     border-bottom: 0.1px solid #6C94AD;
@@ -45,6 +49,7 @@ header {
     width: 100%;
     background-image: url(/img/hero_background.jpg);
     background-size: cover;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
