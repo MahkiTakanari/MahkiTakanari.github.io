@@ -169,7 +169,7 @@ header {
         .name {
             margin-bottom: 10px;
             h5 {
-                font-size: 20px;
+                font-size: min(25px, 1.5vw);
                 /* margin-top: 40px; */
                 padding-left: 20px;
                 @media screen and (max-width: 480px) {
@@ -178,13 +178,15 @@ header {
                 }
             }
             h3 {
-                font-size: 60px;
+                font-size: clamp(40px, 5vw, 65px);
                 font-weight: 500;
                 @media screen and (max-width: 480px) {
                     font-size: 35px;
                 }
                 span {
                     font-size: 40px;
+                    font-size: clamp(10px, 4vw, 45px);
+                    font-weight: 300;
                     letter-spacing: 0.1em;
                     @media screen and (max-width: 480px) {
                         font-size: 25px;
@@ -194,15 +196,16 @@ header {
         }
 
         p {
-            font-size: 20px;
+            font-size: min(25px, 1.5vw);
             /* letter-spacing: 0.05em; */
         }
         .block {
             margin-top: 30px;
             h4 {
-                font-size: 23px;
-                font-weight: 300;
-                margin: 5px 0 1px;
+                font-size: min(30px, 1.7vw);
+                font-weight: 400;
+                margin: 0.5em 0 0.1em;
+                /* padding-bottom: 0.5em; */
                 @media screen and (max-width: 480px) {
                     font-size: 14px;
                 }
@@ -216,9 +219,10 @@ header {
                 }
             }        
             p{
-                font-size: 20px;
+                font-size: min(25px, 1.5vw);
                 /* margin-top: 20px; */
                 padding-left: 1.5em;
+                /* padding-bottom: 1em; */
                 @media screen and (max-width: 480px) {
                     font-size: 14px;
                     margin-top: 5px;
