@@ -75,7 +75,8 @@ header {
     }
 
     h1 {
-        font-size: 80px;
+        /* font-size: 80px; */
+        font-size: clamp(40px, 8vw, 80px);
         font-weight: 700;
         background-color: transparent;
         @media screen and (max-width: 480px) {
@@ -83,7 +84,8 @@ header {
         }
     }
     p {
-        font-size: 40px;
+        /* font-size: 40px; */
+        font-size: clamp(15px, 3.5vw, 40px);
         background-color: transparent;
         margin-top: 40px;
         @media screen and (max-width: 480px) {
@@ -114,7 +116,8 @@ header {
     margin: 0 0 60px;
     h2 {
         color: #C18F00;
-        font-size: 60px;
+        /* font-size: 60px; */
+        font-size: clamp(50px, 5vw, 65px);
         font-weight: 700;
         @media screen and (max-width: 480px) {
             font-size: 40px;
@@ -218,7 +221,8 @@ header {
         }
     }
     .title{
-        font-size: 30px;
+        /* font-size: 30px; */
+        font-size: 2vw;
         background-color: transparent;
         h3{
             background-color: transparent;
@@ -232,18 +236,21 @@ header {
         background-color: transparent;
         h5 {
             background-color: transparent;
-            font-size: 20px;
+            /* font-size: 20px; */
+            font-size: min(30px, 1.5vw);
             font-weight: 600;
             padding-bottom: 0.5em;
         }
         span{
             background-color: transparent;
-            font-size: 17px;
+            /* font-size: 17px; */
+            font-size: min(25px, 1.2vw);
             font-weight: 200;
         }
         p {
             background-color: transparent;
-            font-size: 20px;
+            /* font-size: 20px; */
+            font-size: min(30px, 1.5vw);
             font-weight: 400;
             padding-left: 1em;
             padding-bottom: 1em;
@@ -259,11 +266,13 @@ header {
         padding: 30px 0;
         .content {
             ul li{
+                font-size: min(30px, 1.2vw);
                 font-weight: 200;
                 text-indent: -1em;
                 padding-left: 1em;
                 padding-bottom: 10px;
                 span {
+                    font-size: min(30px, 1.2vw);
                     font-weight: 200;
                     text-decoration: underline;
                 }
@@ -328,16 +337,16 @@ header {
     padding: 80px 0;
     text-align: center;
     h5 {
-        font-size: 25px;
+        font-size: min(30px, 1.5vw);
         font-weight: 500;
     }
     p {
-        font-size: 20px;
+        font-size: min(30px, 1.2vw);
         font-weight: 200;
         padding: 10px 0 35px;
     }
     .mail {
-        width: 380px;
+        width: min(600px, 28vw);
         padding: 10px 0 25px;
     }
 }
@@ -347,6 +356,7 @@ footer {
     padding: 50px;
     text-align: center;
     p {
+        font-size: min(30px, 1vw);
         background-color: transparent;
         padding-bottom: 10px;
         font-weight: 200;
