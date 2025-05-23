@@ -24,6 +24,7 @@ header {
     .logo {
         display: block;
         font-size: 30px;
+        letter-spacing: 0.05em;
         font-weight: 500;
         @media screen and (max-width: 768px) {
             font-size: 20px;
@@ -165,57 +166,62 @@ header {
         }
     }
     .portfolioinfo {
-        h4 {
-            font-size: 20px;
-            margin-top: 40px;
-            padding-left: 5px;
-            @media screen and (max-width: 480px) {
-                font-size: 15px;
-                margin-top: 0px;
-            }
-        }
-        h3 {
-            font-size: 60px;
-            font-weight: 500;
-            @media screen and (max-width: 480px) {
-                font-size: 35px;
-            }
-            span {
-                font-size: 40px;
+        .name {
+            margin-bottom: 10px;
+            h5 {
+                font-size: 20px;
+                /* margin-top: 40px; */
+                padding-left: 20px;
                 @media screen and (max-width: 480px) {
-                    font-size: 25px;
+                    font-size: 15px;
+                    margin-top: 0px;
                 }
             }
+            h3 {
+                font-size: 60px;
+                font-weight: 500;
+                @media screen and (max-width: 480px) {
+                    font-size: 35px;
+                }
+                span {
+                    font-size: 40px;
+                    letter-spacing: 0.1em;
+                    @media screen and (max-width: 480px) {
+                        font-size: 25px;
+                    }
+                }
+            }           
         }
-        p{
+
+        p {
             font-size: 20px;
-            margin-top: 20px;
-            @media screen and (max-width: 480px) {
-                font-size: 14px;
-                margin-top: 5px;
-            }
+            /* letter-spacing: 0.05em; */
         }
-        ul li {
-            font-size: 20px;
-            margin-left: 1.5em;
-            @media screen and (max-width: 480px) {
-                font-size: 14px;
-                margin-left: 1em;
-            }
-        }
-        h5 {
-            font-size: 20px;
-            font-weight: 300;
-            margin-bottom: 10px;
-            @media screen and (max-width: 480px) {
-                font-size: 14px;
-            }
-            span {
+        .block {
+            margin-top: 30px;
+            h4 {
+                font-size: 23px;
+                font-weight: 300;
+                margin: 5px 0 1px;
+                @media screen and (max-width: 480px) {
+                    font-size: 14px;
+                }
+                span {
+                    font-size: 20px;
+                    padding-left: 1.5em;
+                    @media screen and (max-width: 480px) {
+                        padding-left: 1em;
+                        font-size: 14px;
+                    }
+                }
+            }        
+            p{
                 font-size: 20px;
+                /* margin-top: 20px; */
                 padding-left: 1.5em;
                 @media screen and (max-width: 480px) {
-                    padding-left: 1em;
                     font-size: 14px;
+                    margin-top: 5px;
                 }
             }
         }
