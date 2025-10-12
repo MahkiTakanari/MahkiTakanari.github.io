@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
+
 <body id="top">
     <!-- Header -->
     <header>
@@ -21,6 +23,7 @@
         <nav>
             <ul>
                 <li><a href="#aboutme" class="navigate">About me</a></li>
+                <li><a href="#research" class="navigate">Research</a></li>
                 <li><a href="#link" class="navigate">Link</a></li>
                 <li><a href="#contact" class="navigate">Contact</a></li>
             </ul>
@@ -147,6 +150,63 @@
                 </div>
              </section>
         </section>
+        
+        <!-- Research section -->
+        <section class="research-section" id="research">
+            <div class="container">
+                <div class="heading-group"><h2>Research</h2></div>
+
+                <div class="research-grid">
+                    <!-- 左：ズーム対応の画像ビューア（WebPのみ、PDFなし） -->
+                    <figure class="poster-figure">
+                        <div class="poster-toolbar" role="toolbar" aria-label="Zoom controls">
+                        <button class="poster-btn" id="zOut">−</button>
+                        <button class="poster-btn" id="zIn">＋</button>
+                        <button class="poster-btn" id="zFit">Fit</button>
+                        <span class="zoom-label" id="zLbl">100%</span>
+                        </div>
+                        <div class="poster-canvas" id="pCanvas" tabindex="0" aria-label="Drag to pan, scroll to zoom">
+                        <img id="posterImg"
+                            src="img/poster.webp"
+                            alt="Research poster: Relationship between finger pad Young’s modulus and VPT (overview)"
+                            draggable="false" loading="lazy" width="2400" height="3400">
+                        </div>
+                    </figure>
+
+                    <!-- 右：説明文（1600字を段落で） -->
+                    <div class="research-desc">
+                        <h3>研究概要</h3>
+                        <p>
+                        <!-- ここに1600字テキストを複数<p>に分けて貼り付け -->
+                        　オンラインショッピングで洋服の滑らかな肌触りを確かめられたり、店頭に並ぶシャンプーのしっとり、さらさらタイプなどの違いが分かったりしたいと思ったことはないでしょうか。
+                        私は、そのような誰もが『触感』を共有できる技術の実現を目指し、その基盤となる触覚のメカニズムを解明する研究をしています。医療の現場で用いられている触診や、衣類や化粧品の製品開発の分野で行われている、「触り心地」の評価は、熟練者の感覚に頼っています。これは非常に主観的で、人によって感じ方が違うため、他者との感覚の共有は困難であったり、技能の継承は容易ではないという課題があります。このため、触感を定量的に評価するための触感センサが開発されていますが、既存の触感センサの多くは対象物の物理特性を測定することに特化しており、人の触感覚を評価できる触感センサは未だ開発されていません。
+                        この物性値と人の感覚が結びつけられていない最大の原因は、触覚の『個人差』にあると考えました。この個人差の要因には、好みや経験などの『認知』に加え、『皮膚特性』が重要です。なぜなら、触覚を感じるセンサーは皮膚の内部にあり、皮膚表面の硬さなどによってセンサーに伝わる刺激そのものが、人それぞれ変わってくるためです。
+                        </p>
+                        <br>
+                        <p>
+                        　そこで私の研究は、この皮膚特性が触覚にどう影響するかを解明し、人の感覚を正しく測れる新しいセンサー技術の基盤を作ることを目指しています。
+                        その方法が、測って、モデル化して、応用するという3つのステップです。
+                        中でも、本研究の一番のミソは、皮膚特性の影響を調べるための実験方法にあります。通常は他人と比較しますが、私は『同じ人の皮膚の状態を一時的に変化させる』という方法を考案しました。これにより、「好み」といった心理的な影響を完全に排除し、純粋な皮膚特性だけの効果を正確に捉えることができます。
+                        そして、計測したデータから、『混合効果モデル』という、“個人差”のような複数の要因が混ざったデータから、それぞれの影響度合いを分けて分析できる統計手法を用いて、振動感覚への影響をモデル化します。このモデル化によって、こちらのような感度関数が求まり、個性を可視化することができます。最終的には、この個性のデータを既存のセンサー出力と組み合わせることで、ただの物理測定ではない、人の感覚に近いアウトプットが出せるようになります。
+                        </p>
+                        <br>
+                        <p>
+                        　グラフは、横軸が皮膚の硬さ、縦軸が振動に対する感度をプロットした結果になっており、皮膚の状態を変化させると、振動の感じ方も変わることを確認しました。しかし、その変化の仕方にまで個人差がある、という興味深い結果が得られています。この結果は複数日に渡って計測しました。そのため、観測された変化が、意図した処理によるものか、あるいは日々の体調のような生理的な揺らぎによるものか、見極める必要が出てきました。そこで、この生理的変動がどの程度のものなのかを定量的に評価する実験を行いました。これがわかれば、皮膚特性変化の処理が有意なものなのかが判定できます。さらに、皮膚特性の計測方法の改良も行なっています。これまでの皮膚の硬さの計測方法は、爪も含めた指全体の硬さの計測だったのですが、触覚受容器の分布を考えると皮膚表層の特性を評価すべきと考えまして、OCTと呼ばれる、指の断面図を撮影できる、いわば『指のCTスキャン』のような装置を用いて、皮膚表面の特性をより精密に計測する手法を現在開発中です。
+                        </p>
+                        <br>
+                        <p>
+                        　このように、個人の『触感』という主観的な感覚を、科学的なデータに基づいて定量化し、情報として扱えるようにすることを目指して研究を行っています。この研究が進めば、人の感性に寄り添った製品開発や、遠隔医療の質の向上、さらには熟練者の持つ『匠の技』の継承など、様々な分野での技術革新に貢献できると考えています。
+                        </p>
+                    </div>
+                    <div class="note-inline">
+                        <span class="badge badge-wip">Ongoing</span>
+                        本ページは進行中の研究をまとめたものです。結論や数値は更新される可能性があります。
+                        <span class="sep">•</span>
+                        <span>最終更新：<time id="lastUpdated" datetime="2025-09-01">2025-09-30</time></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Link section -->
         <section class="link-section" id="link">
@@ -208,6 +268,8 @@
         <p>Thanks for visiting my website.</p>
         <p>&copy;2025 MahkiTakanari. All rights reserved.</p>
      </footer>
+
+
 
 </body>
 

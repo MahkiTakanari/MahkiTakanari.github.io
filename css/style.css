@@ -153,6 +153,8 @@ header {
 
 .main-section {
     padding: 80px 0;
+    background-color: #0F1523;
+    .heading-group h2{background-color: #0F1523;}
     .image {
         border-radius: 20px;
         overflow: hidden;
@@ -165,11 +167,16 @@ header {
 
         }
     }
+    .portfolio {background-color: #0F1523}
+
     .portfolioinfo {
+        background-color: #0F1523;
         .name {
             margin-bottom: 10px;
+            background-color: #0F1523;
             h5 {
                 font-size: min(25px, 1.5vw);
+                background-color: #0F1523;
                 /* margin-top: 40px; */
                 padding-left: 20px;
                 @media screen and (max-width: 480px) {
@@ -181,12 +188,14 @@ header {
             }
             h3 {
                 font-size: clamp(40px, 5vw, 65px);
+                background-color: #0F1523;
                 font-weight: 500;
                 @media screen and (max-width: 480px) {
                     /* font-size: 35px; */
                     font-size: clamp(20px, 8vw, 35px);
                 }
                 span {
+                    background-color: #0F1523;
                     font-size: 40px;
                     font-size: clamp(10px, 4vw, 45px);
                     font-weight: 300;
@@ -201,6 +210,7 @@ header {
 
         p {
             font-size: min(25px, 1.5vw);
+            background-color: #0F1523;
             .br-mobile {
                 display: none;
               }
@@ -217,7 +227,9 @@ header {
         }
         .block {
             margin-top: 30px;
+            background-color: #0F1523;
             h4 {
+                background-color: #0F1523;
                 font-size: min(30px, 1.7vw);
                 font-weight: 400;
                 margin: 0.5em 0 0.1em;
@@ -227,6 +239,7 @@ header {
                     font-size: min(25px, 4.2vw);
                 }
                 span {
+                    background-color: #0F1523;
                     font-size: 20px;
                     padding-left: 1.5em;
                     @media screen and (max-width: 480px) {
@@ -237,6 +250,7 @@ header {
                 }
             }        
             p{
+                background-color: #0F1523;
                 font-size: min(25px, 1.5vw);
                 /* margin-top: 20px; */
                 padding-left: 1.5em;
@@ -304,13 +318,15 @@ header {
 
     .carrer {
         padding: 30px 0;
-        background-color: #0F1523;
+        /* background-color: #0F1523; */
     }
 
     .performance {
         padding: 30px 0;
+        background-color: #0F1523;
         .content {
             ul li{
+                background-color: #0F1523;
                 font-size: min(30px, 1.2vw);
                 font-weight: 200;
                 text-indent: -1em;
@@ -428,3 +444,125 @@ footer {
         }
     }
 }
+
+/* ===== Research (WebP only) ===== */
+.research-section {
+  padding: 80px 0;
+  background-color: #141A29;
+}
+
+/* ===== Research : 縦積み（画像→説明） ===== */
+.research-grid {
+  display: block !important;   /* 既存gridを無効化して縦並び */
+}
+
+/* 画像ブロック */
+.poster-figure {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  background: transparent;
+}
+
+/* ビューア領域（縦長をやや控えめに） */
+.poster-canvas {
+  position: relative;
+  height: clamp(55vh, 68vh, 78vh); /* ← この1箇所で高さを管理 */
+  overflow: auto;
+  background: #0F1523;
+  border: 1px solid #6C94AD33;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  cursor: grab;
+}
+.poster-canvas:active { cursor: grabbing; }
+
+/* ズームバー */
+.poster-toolbar {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  padding: .5rem;
+  border: 1px solid #6C94AD33;
+  border-radius: 12px 12px 0 0;
+  background: #0F1523;
+}
+.poster-btn {
+  appearance: none;
+  border: 1px solid #1a2e4f;
+  background: #1a2e4f;
+  color: #fff;
+  padding: .35rem .7rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.zoom-label { margin-left: auto; font-variant-numeric: tabular-nums; }
+
+/* 画像：初期は親幅にフィット */
+.poster-canvas img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  transform-origin: 0 0;
+}
+
+/* JSでズーム有効化後に原寸ベースへ */
+.poster-canvas img.zoomable {
+  max-width: none;
+}
+.poster-note {
+  text-align: right;
+  font-size: .9rem;
+  color: #BBD0DF;
+  margin-top: .4rem;
+  background: transparent;
+}
+
+/* 説明部分 */
+.research-desc {
+  background: #0F1523;
+  border: 1px solid #6C94AD33;
+  border-radius: 16px;
+  max-width: min(1200px, 95vw);
+  margin: 0 auto;
+  padding: 28px;
+}
+.research-desc h3 {
+  margin: 0 0 .5rem;
+  color: #C18F00;
+  font-weight: 600;
+  font-size: min(30px, 1.7vw);
+  background: transparent;
+}
+.research-desc p {
+  font-size: min(20px, 1.4vw);
+  line-height: 1.9;
+  font-weight: 300;
+  background: transparent;
+}
+@media (max-width:480px){
+  .research-desc p { font-size: 4.2vw; }
+}
+
+/* 研究ページ用の小さな告知 */
+/* 研究ページ用の小さな告知（中央寄せ＋上下マージン） */
+.note-inline{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem .8rem;
+  align-items: center;
+  justify-content: center;               /* ← 中央寄せ */
+  text-align: center;                    /* ← 複数行でも中央 */
+  max-width: min(1200px, 95vw);          /* ← 説明カードと同じ幅で中央に */
+  margin: 24px auto 40px;                /* ← 上下に十分な距離を確保 */
+  padding: 6px 10px;                     /* ← ほんの少し余白（任意） */
+  color: #BBD0DF;
+}
+.note-inline .sep { opacity: .5; }
+
+.badge{
+  display:inline-block; padding:.15rem .5rem; border-radius:999px;
+  font-size:.8rem; font-weight:600; vertical-align:middle;
+}
+.badge-wip{ background:#1a2e4f; border:1px solid #6C94AD; color:#E6F1F8; }
